@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<head>
+	<!-- metadatos -->
+	<meta charset="UTF-8"> <!-- Latino -->
+	<meta charset="UTF-16"> <!-- izq a derecha -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Palabras clave para motores de busqueda-->
+	<meta name = "keywords" content= "HTML, CSS, JavaScript">
+	<meta name ="author" content="eriamuri">
+	<!-- actualizar documento por x seg-->
+	<!-- <meta http-equiv="refresh" content="300"> -->
+	
+	<!-- Titulo e Iconos -->
+	<title>Practica JavaScript</title>
+	<link rel="icon" type="../img/Alakazam.ico" sizes="16x16" href="Alakazam.ico">
+	<link rel="icon" href="../img/Alakazam.ico">
+	
+	<!----------- JavaScript puede ejercutarse, tanto en el documentoHTML o desde un file externo -------------->
+	<!----------- JavaScript puede ejercutarse, antes del body, dentro del body, o despues -------------->
+	
+	<!----------- script antes del body - Interno -------------->
+	<script>
+		alert("Este es mi primer mensaje Alert - interno - antes del body");
+	</script>
+	<style>
+		.contenedor {
+            height: 200px;
+            overflow-y: scroll;
+            border: 2px solid #333;
+            padding: 20px;
+            margin: 20px;
+        }
+        #miVideo {
+            width: 400px;
+            border: 2px solid #333;
+        }
+        #estado {
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 5px;
+        }
+		#info {
+            background: #f0f8ff;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            min-height: 40px;
+        }
+        .texto {
+            padding: 15px;
+            border: 2px solid #ddd;
+            margin: 10px 0;
+        }
+    </style>
+	
+</head>
+
+<body>
+	<hr>
+	
+	<!----------- Barra de navegación -------------->
+	
+	<nav>	
+		<a href="../../index.html"> Inicio </a> |
+		<a href="../page/practica_Texto.html"> Practica de etiquetas de Texto </a> |
+		<a href="../page/practica_Audio.html"> Practica de etiquetas de Audio </a> |
+		<a href="../page/practica_Video.html"> Practica de etiquetas de Video </a> |
+		<a href="../page/practica_Tablas.html"> Practica de etiquetas de Tablas </a> |
+		<a href="../page/practica_Listas.html"> Practica de etiquetas de Listas </a> |
+		<a href="../page/practica_Imagenes.html"> Practica de etiquetas de Imagenes </a> |
+		<a href="../page/practica_JavaScript.html"> Practica de etiquetas de JavaScript </a> | 
+		<a href="../page/practica_CSS.html"> Practica de etiquetas de CSS </a> |
+		<a href="../page/practica_MenuVertical.html"> Practica de etiquetas de Menu Vertical </a> |
+		<a href="../page/practica_MenuHorizontal.html"> Practica de etiquetas de Menu Horizontal </a> |
+		<a href="../page/practica_Plantilla.html"> Practica de etiquetas de Plantilla </a> |
+		<a href="../CopyPaste/zay-shop/templatemo_559_zay_shop/index.html"> Practica de etiquetas de Copy/Paste </a> |
+		<a href="../page/practica_Formulario.html"> Practica de etiquetas de Formulario </a> |
+		<a href="../page/practica_Formulario2.html"> Practica de etiquetas de Formulario 2 </a> |
+		<a href="../page/practica_Controles.html"> Practica de etiquetas de Controles </a> |
+		<a href="../ia/practica_InteligenciaArtificial.html"> Practica de etiquetas de Inteligencia Artificial </a> |
+		<a href="https://sites.google.com/fiec.espol.edu.ec/lugaresguayaquileamm/inicio"> Practica de etiquetas de Builder </a> |
+		<a href="https://protafolioeamm.my.canva.site/"> Practica de etiquetas de Canva </a>	
+	</nav>
+	
+	<!----------- Practica de Etiquetas de CSS -------------->
+	<hr>
+	<main>
+		<h1>
+			Practica de JavaScript
+		</h1>
+		<section>
+			<p>
+				JS es un lenguaje de programacion que se ejecuta tanto en el front como en el back
+			</p>
+			<p>
+				JS lo usamos en varios frameworks:
+			</p>
+			<ol>
+				<li> React </li>
+				<li> Vue.js </li>
+				<li> Angular </li>
+				<li> Svelt/seveltekit </li>
+				<li> Next.js </li>
+				<li> Nuxt.js </li>
+				<li> Astro </li>
+				
+				
+			</ol>
+		</section>
+		<hr>
+		<section>
+			<p>
+				para programar en JS ud. hará uso de sus conocimientos de programación
+				(básico/intermedio/avanzado)
+				<br>
+				Variables: locales, globales, estasticas/constantes<br>
+				Estructuras de control (if, else, elif)<br>
+				bucles (For, While, ...)<br>
+				Funciones<br>
+			</p>
+		</section>
+		<section>
+			<h3> Tipos de variables </h3>
+			<ul>
+				<li> let: locales = dentro de una funcion o bloque de programación. </li>
+				<li> var: Globales = las podemos utilizar en cualquier parte del desarrollo. </li>
+				<li> const: Variables con valores fijos, que no se puede cambiar de valor durante su ejecución. </li>
+				
+			</ul>
+		
+		
+		</section>
+		
+		<section>
+			<h3> Tipos de datos </h3>
+			<ul>
+				<li> String: Carácteres alfanumericos</li>
+				<li> Number: Valores numéricos </li>
+				<li> Booleano: True/False </li>
+				<li> Arrays: Listas["Elemento Listas #1","Elemento Listas #2","Elemento Listas #N"] </li>
+				<li> Object: Diccionarios: NombreDiccionario{"Clave1":Valor1,"ClaveN":ValorN}</li>
+				<li> Null - valor indefinido </li>
+			</ul>
+		
+		
+		</section>
+		
+		
+		<section>
+			<h3> Programación en JS </h3>
+			<ul>
+				<li> Condiciones: if/else </li>
+				<li> Estructuras: Switch </li>
+				<li> Ciclos/Bucles: For, While, do-while </li>
+				<li> for...of = para recorrer colecciones (arrays) </li>
+				<li> for...in = para recorrer object/dicc (clave) </li>
+			</ul>
+		</section>
+		<section>
+			<h3> Momento - lugar cuando se ejecuta JS </h3>
+			<ol>
+				<li> Script dentro del HTML - Script embebido en medio del HTML - (Inline Script Early) </li>
+				<li> Script dentro de un control - uso de los atributos en los elementos HTML - (Inline Events Handlers)</li>
+				<li> Script al final (Antes de cerrar Body) - Script embebido en final antes de cerrar el body - (Inline Script Late) </li>
+				<li> Archivo externo (.js) - Script externo vinculado al html - (External Script) </li>
+			</ol>
+		</section>
+		<section>
+			<h3> Prueba de ejecución de cada momento</h3>
+			<ol>
+				<li> Script dentro del HTML - (Inline Script Early) 
+					<Script>
+						document.write("Este es mi primer mensaje generado con Document.write - Dentro del body")
+					</Script>
+				</li>	
+				<li> Script dentro de un control - (Inline Events Handlers) 
+					<!--Debemos conocer los eventos(acciones que hace el usuario)-->
+					<button onclick="alert('Script ejecutado dentro de un control (botón)')"> Presione 1
+					</button>
+				</li>
+				<li> Script al final (Antes de cerrar Body) - (Inline Script Late) 
+					<button id="BtnPresioname2" onclick="mostrartAlert()"> Presioname 2 </button><br>
+				</li>
+				<li> Archivo externo (.js) - (External Script) <br>
+					<!-- se recomienda no usar llamadas a función, en su lugar trabajar con los ID-->
+					<button id="BtnPresioname3"> Presioname 3 </button><br>
+					<!-- Hackear al usuario -->
+					<!-- Modificar contenido o controles por medio de eventos -->
+					<h5> Modificar el contenido del HTML desde JS </h5>
+					<p id="Parrafo_1">
+						Este párrafo fue escrito en HTML, las fuentes  no
+						deberian ser modificado desde el Script.
+					</p>
+					<!-- Modificar contenido caption de un botón -->
+					<button id="BtnPresioname4"> Presioname 4 </button><br>
+				</li>
+			</ol>
+		</section>
+		<section>
+			<h3> Métodos relacionados </h3>
+			<h5> Eventos JS para páginas web </h5>
+			<!-- Recuerda: CSS -> selectores -->
+			<ol>
+				<li> getElementById 
+					<p> Afectamos a un único Elemento por su Id.
+						document.getElementById("IdDelControl")
+					</p>
+					<h1 id="IdTitulo">Titulo Original</h1>
+				</li>
+				<li> getElementbyClassName() 
+					<p> Todos los elementos que tengan las misma CLASS se ven afectados por:
+						getElementbyClassName()
+					</p>
+					<p class="item">Este es un párrafo #1 con la clase: "item"</p>
+					<p class="item">Este es un párrafo #2 con la clase: "item"</p>
+					<p class="item">Este es un párrafo #3 con la clase: "item"</p>
+				</li>
+				<li> getElementbyTagName() 
+					<p> Todos los elementos que tengan las misma etiqueta:
+						getElementbyTagName()
+					</p>
+				</li>
+				<li> querySelector 
+					<p> El primer elemento que coincida con un selector CSS, document.querySelector()
+					</p>
+					<p>Veamos la ejecución paso a paso
+					</p>
+				</li>
+				<li> querySelectorAll()
+					<p>
+						Todos los elementos HTML que coincidan con un selector seleccionado document.
+						querySelectorAll()
+					</p>
+					<div> primero </div>
+					<div> segundo </div>
+					<div> tercero </div>
+					
+				</li>
+			</ol>
+		</section>
+		<!-- Tarea -->
+		<section>
+			<h3 > Eventos programables JS dentro de una Página web </h3>
+			<ol>
+				<li> DOMContentLoaded
+					<p> Es un evento que se dispara cuando el navegador ha terminado 
+					de cargar y parsear completamente el Document Object Model (DOM) 
+					de una página web, sin esperar a que se carguen recursos externos como imágenes, 
+					hojas de estilo o subframes.
+					</p>
+					<p>
+					El DOM (Modelo de Objetos de Documento) es la representación estructurada de 
+					una página web en formato de árbol, que permite a JavaScript interactuar con ella. 
+					Cuando un navegador carga un documento HTML, crea una representación en memoria del
+					contenido, del que JavaScript puede acceder, manipular y modificar elementos, 
+					contenido y estilos de forma dinámica para crear experiencias interactivas. 
+					</p>
+					<button id="miBoton">Haz clic</button><br><br>
+					<script>
+						document.addEventListener('DOMContentLoaded', function() {
+							// Tu código aquí se ejecutará cuando el DOM esté listo
+							console.log('¡El DOM está completamente cargado!');
+							
+							// Ejemplo: Agregar un evento a un botón
+							document.getElementById('miBoton').addEventListener('click', function() {
+								alert('¡Botón clickeado!');
+							});
+						});
+					</script>
+				</li>
+				<li> Load 
+					<p> El evento load se dispara cuando todos los recursos de la página han 
+					terminado de cargarse completamente, incluyendo:
+					<ul>
+						<li>DOM completo</li>
+						<li>Imágenes</li>
+						<li>Hojas de estilo (CSS)</li>
+						<li>Scripts</li>
+						<li>iframes</li>
+						<li>Y cualquier otro recurso externo</li>
+					</ul>
+					</p>
+					<img id="imagen1" src="../img/corki.gif" alt="imagen1">
+					<script>
+						// Load en una imagen específica
+						document.getElementById('imagen1').addEventListener('load', function() {
+							console.log('Imagen 1 cargada completamente');
+							this.style.border = '2px solid green';
+						});
+						
+						// Load en window (global)
+						window.addEventListener('load', function() {
+							console.log('TODOS los recursos de la página cargados');
+						});
+					</script>
+				</li>
+				<li> unload 
+					<p> El evento unload se dispara cuando:
+						<ul>
+							<li>El usuario está abandonando la página</li>
+							<li>Se está cerrando la pestaña o ventana del navegador</li>
+							<li>Se está recargando la página</li>
+							<li>Se está navegando a otra página</li>
+						</ul>
+					</p>
+					<img src="https://picsum.photos/200/100" id="miImagen">
+					<p id="info"></p>
+					<script>
+						 window.addEventListener('load', function() {
+							const img = document.getElementById('miImagen');
+							const info = document.getElementById('info');
+							
+							info.textContent = `Imagen cargada: ${img.naturalWidth}x${img.naturalHeight}px`;
+						});
+					</script>
+				</li>
+				<li>  beforeunload
+					<p> es un evento que se dispara justo antes de que la página se descargue, 
+					permitiendo mostrar un mensaje de confirmación al usuario para prevenir 
+					que abandone la página accidentalmente.
+					</p>
+					<a href="https://google.com">Ir a Google</a>
+					<script>
+						window.addEventListener('beforeunload', function(event) {
+							event.preventDefault();
+							event.returnValue = '¿Seguro que quieres salir?';
+						});
+					</script>
+				</li>
+				<li>  visibilitychange
+					<p> visibilitychange es un evento que se dispara cuando la 
+					visibilidad de la pestaña cambia, es decir, cuando el usuario 
+					cambia a otra pestaña o minimiza el navegador.
+					</p>
+					<h1 id="contador">0</h1>
+					<p>Contador se pausa cuando la pestaña no está visible</p>
+
+					<script>
+						let contador = 0;
+						let intervalo;
+
+						function iniciarContador() {
+							intervalo = setInterval(() => {
+								contador++;
+								document.getElementById('contador').textContent = contador;
+							}, 100);
+						}
+
+						function detenerContador() {
+							clearInterval(intervalo);
+						}
+
+						document.addEventListener('visibilitychange', function() {
+							if (document.visibilityState === 'visible') {
+								iniciarContador();
+								document.title = "✅ Pestaña Activa";
+							} else {
+								detenerContador();
+								document.title = "⏸️ Pestaña Inactiva";
+							}
+						});
+
+						// Iniciar al cargar
+						iniciarContador();
+					</script>
+					
+					
+				</li>
+				<li>  readystatechange
+					<p> es un evento que se dispara cuando el estado de 
+					carga del documento cambia, permitiendo saber en 
+					qué fase de carga se encuentra la página.
+					</p>
+					<h1 id="estado">Estado actual: </h1>
+
+					<script>
+						document.addEventListener('readystatechange', function() {
+							const estado = document.getElementById('estado');
+							estado.textContent = 'Estado actual: ' + document.readyState;
+							
+							console.log('Estado cambiado a:', document.readyState);
+						});
+					</script>
+				</li>
+				<li>  fullscreenchange y fullscreenerror
+					<p> fullscreenchange: Se dispara cuando el elemento entra o sale del modo pantalla completa<br>
+					fullscreenerror: Se dispara cuando ocurre un error al intentar entrar en modo pantalla completa
+					</p>
+					<video id="miVideo" controls>
+						<source src="https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4" type="video/mp4">
+					</video>
+					<div id="estado">Estado: Normal</div>
+					<button onclick="togglePantallaCompleta()">Pantalla Completa</button><br><br>
+
+					<script>
+						const video = document.getElementById('miVideo');
+						const estado = document.getElementById('estado');
+
+						// Escuchar cambios en pantalla completa
+						document.addEventListener('fullscreenchange', function() {
+							if (document.fullscreenElement) {
+								estado.textContent = 'Estado: PANTALLA COMPLETA 🚀';
+								estado.style.background = '#d4edda';
+								estado.style.color = '#155724';
+							} else {
+								estado.textContent = 'Estado: Normal';
+								estado.style.background = '#f8f9fa';
+								estado.style.color = '#333';
+							}
+						});
+
+						function togglePantallaCompleta() {
+							if (!document.fullscreenElement) {
+								video.requestFullscreen().catch(err => {
+									console.error('Error:', err);
+								});
+							} else {
+								document.exitFullscreen();
+							}
+						}
+					</script>
+				</li>
+				<li>  copy, cut, paste
+					<p> copy: Se dispara cuando el usuario copia contenido<br>
+						cut: Se dispara cuando el usuario corta contenido<br>
+						paste: Se dispara cuando el usuario pega contenido<br>
+					</p>
+					<div class="area" contenteditable="true">
+					¡Copia, corta o pega texto aquí!
+					</div>
+					
+					<input type="text" placeholder="O aquí en este input">
+					
+					<div id="log">Eventos aparecerán aquí...</div>
+					<br>
+					<script>
+						const log = document.getElementById('log');
+
+						// Evento COPY
+						document.addEventListener('copy', function(event) {
+							agregarLog('📋 COPY - Texto copiado');
+						});
+
+						// Evento CUT  
+						document.addEventListener('cut', function(event) {
+							agregarLog('✂️ CUT - Texto cortado');
+						});
+
+						// Evento PASTE
+						document.addEventListener('paste', function(event) {
+							agregarLog('📎 PASTE - Texto pegado');
+						});
+
+						function agregarLog(mensaje) {
+							log.innerHTML += `<div>${new Date().toLocaleTimeString()}: ${mensaje}</div>`;
+						}
+					</script>
+				</li>
+				<li>  selectionchange
+					<p> es un evento que se dispara cuando la selección de texto en el 
+					documento cambia, es decir, cuando el usuario selecciona o deselecciona texto.
+					</p>
+					<div class="texto">
+						<p>1.- Selecciona texto en este párrafo para ver el evento selectionchange en acción.</p>
+						<p>2.- Puedes seleccionar cualquier parte del texto y verás información sobre la selección.</p>
+					</div>
+					
+					<div id="informa">Selecciona texto arriba para ver información</div>
+					<br>
+					<script>
+						const informa = document.getElementById('informa');
+
+						document.addEventListener('selectionchange', function() {
+							const seleccion = window.getSelection();
+							const textoSeleccionado = seleccion.toString().trim();
+							
+							if (textoSeleccionado) {
+								informa.innerHTML = `
+									<strong>Texto seleccionado:</strong> "${textoSeleccionado}"<br>
+									<strong>Longitud:</strong> ${textoSeleccionado.length} caracteres<br>
+									<strong>Palabras:</strong> ${textoSeleccionado.split(/\s+/).length}
+								`;
+								informa.style.background = '#e8f5e8';
+							} else {
+								informa.innerHTML = 'No hay texto seleccionado';
+								informa.style.background = '#f0f8ff';
+							}
+						});
+					</script>
+				</li>
+				<li>  scroll
+					<p> se dispara cuando un elemento es desplazado, ya sea mediante 
+					el scroll del mouse, las flechas del teclado, o programáticamente.
+					</p>
+					<div id="info2">ScrollY: 0px</div>
+    
+					<div class="contenedor">
+						<p>Desplázate en este contenedor...</p>
+						<div style="height: 800px; background: linear-gradient(#f0f0f0, #ccc);">
+							<!-- Contenido alto para hacer scroll -->
+						</div>
+					</div>
+
+					<script>
+						const info2 = document.getElementById('info2');
+						const contenedor = document.querySelector('.contenedor');
+
+						// Scroll en el contenedor específico
+						contenedor.addEventListener('scroll', function() {
+							info2.textContent = `Scroll: ${this.scrollTop}px`;
+						});
+					</script>
+				</li>
+			</ol>
+		</section>
+
+	</main>
+	
+	<!----------- script dentro del body - Interno -------------->
+	<script>
+		alert("Este es mi segundo mensaje Alert - interno - dentro del body");
+	</script>
+	<!----------- script dentro del body - file externo -------------->
+	<script>
+	</script>
+	<hr>
+	
+	<!--------- Pie de Pagina --------->
+	<footer>
+		<p>Desarrollado por eriamuri</p>
+		<p>
+			<a href="mailto:eriamuri@espol.edu.ec"> Correo </a> |
+			<a href="tel:+593989868320"> Celular </a>
+		</p>
+		<p> 2025 - Página de Practicas Académicas | Espol </p>
+	</footer>
+	
+	<!----------- script después del body - Interno -------------->
+	<script>
+		alert("Este es mi tercer mensaje Alert - interno - después del body");
+		
+		document.write("Este es mi segundo mensaje generado con Document.write - Dentro del body")
+	
+		function mostrartAlert(){
+			alert("este mensaje se muestra al presionar el boton: Presioname2 - Script interno")
+		}
+	</script>
+
+	<!----------- script despues del body - file externo -------------->
+	<!----------- Es considerado una mala práctica llamar al JS antes del body, sea interno o externo -------------->
+	<script src="../JavaScript/JavaScript.js"> </script>
+
+</body>

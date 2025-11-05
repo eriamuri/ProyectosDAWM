@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<head>
+	<!-- metadatos -->
+	<meta charset="UTF-8"> <!-- Latino -->
+	<meta charset="UTF-16"> <!-- izq a derecha -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Palabras clave para motores de busqueda-->
+	<meta name = "keywords" content= "HTML, CSS, JavaScript">
+	<meta name ="author" content="eriamuri">
+	<!-- actualizar documento por x seg-->
+	<meta http-equiv="refresh" content="300">
+	
+	<!-- Titulo e Iconos -->
+	<title>Practica Imagenes</title>
+	<link rel="icon" type="../img/Victreebel.ico" sizes="16x16" href="Victreebel.ico">
+	<link rel="icon" href="../img/Victreebel.ico">
+</head>
+
+
+<body>
+	<hr>
+	
+	<!----------- Barra de navegación -------------->
+	
+	<nav>	
+		<a href="../../index.html"> Inicio </a> |
+		<a href="../page/practica_Texto.html"> Practica de etiquetas de Texto </a> |
+		<a href="../page/practica_Audio.html"> Practica de etiquetas de Audio </a> |
+		<a href="../page/practica_Video.html"> Practica de etiquetas de Video </a> |
+		<a href="../page/practica_Tablas.html"> Practica de etiquetas de Tablas </a> |
+		<a href="../page/practica_Listas.html"> Practica de etiquetas de Listas </a> |
+		<a href="../page/practica_Imagenes.html"> Practica de etiquetas de Imagenes </a> |
+		<a href="../page/practica_JavaScript.html"> Practica de etiquetas de JavaScript </a> | 
+		<a href="../page/practica_CSS.html"> Practica de etiquetas de CSS </a> |
+		<a href="../page/practica_MenuVertical.html"> Practica de etiquetas de Menu Vertical </a> |
+		<a href="../page/practica_MenuHorizontal.html"> Practica de etiquetas de Menu Horizontal </a> |
+		<a href="../page/practica_Plantilla.html"> Practica de etiquetas de Plantilla </a> |
+		<a href="../CopyPaste/zay-shop/templatemo_559_zay_shop/index.html"> Practica de etiquetas de Copy/Paste </a> |
+		<a href="../page/practica_Formulario.html"> Practica de etiquetas de Formulario </a> |
+		<a href="../page/practica_Formulario2.html"> Practica de etiquetas de Formulario 2 </a> |
+		<a href="../page/practica_Controles.html"> Practica de etiquetas de Controles </a> |
+		<a href="../ia/practica_InteligenciaArtificial.html"> Practica de etiquetas de Inteligencia Artificial </a> |
+		<a href="https://sites.google.com/fiec.espol.edu.ec/lugaresguayaquileamm/inicio"> Practica de etiquetas de Builder </a> |
+		<a href="https://protafolioeamm.my.canva.site/"> Practica de etiquetas de Canva </a>	
+	</nav>
+	
+	<!----------- Practica de Etiquetas de Imagenes -------------->
+	<hr>
+	<main>
+		<h1>
+			Practica de Imagenes
+		</h1>
+	</main>
+	<hr>
+	<!------------- Frame para importar una pagina externa dentro de mi sitio web--------------->
+	<iframe
+		title="Página externa" 
+		width="300" 
+		height="300" 
+		src="https://vago.com/" 
+		style="border: 1px solid" 
+		>
+	</iframe>	
+	<hr>
+	<!------------- Frame con video de youtube --------------->
+	<iframe 
+		width="560" 
+		height="315" 
+		src="https://www.youtube.com/embed/a4na2opArGY?si=VXaPbEsJZtpxvrZh" 
+		title="YouTube video player" 
+		frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+		referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+	</iframe>
+	
+	<!------------- Etiquetas de imagenes --------------->
+	<!--se debe de usar alt dentro de la etiqueta img para describir en palabras la Imagen -->
+	<!--Esta descripción ayuda a: el SEO, Tener texto descriptivo que se usará en el
+		momento en que la imagen no se pueda cargar.
+		Por procesos de accebilidad no videntes.
+	-->
+	<h3> Etiqueta IMG(básica - Imagen local) </h3>
+	<img 
+		src="../img/Metroid.jpg"
+		width = "300px"
+		height = "300px"
+		alt = "Espacio profundo con rojo final"
+	>
+	<hr>
+	<h3> Etiqueta IMG(Medio - Imagen externa) </h3>
+	<img 
+		src=
+		"https://img.freepik.com/free-photo/beautiful-tree-middle-field-covered-with-grass-with-tree-line-background_181624-29267.jpg"
+		width = "300px"
+		height = "300px"
+		alt = "Espacio profundo con rojo final"
+	>
+	<hr>
+	
+	<!------------- Mapeo de imagenes --------------->
+	<img 
+		src="../img/cloud.png"
+		alt = "Red de computadoras"
+		usemap = "#NubeComputadora"
+	>
+	<map name="NubeComputadora">
+		<area
+			shape="poly" alt="computadora de escritorio"
+			coords="414,54,478,85,513,66,546,85,539,207,478,224,348,135,397,115,411,52"
+			href="../page/Nube/nube_pc.html" >
+		<area alt="cpu" href="../page/Nube/nube_cpu.html" coords="88,309,80" shape="circle">
+		<area alt="modem" href="../page/Nube/nube_modem.html" coords="233,182,76" shape="circle">
+		<area alt="celular" href="../page/Nube/nube_celular.html" coords="122,603,108" shape="circle">
+		<area alt="laptop" href="../page/Nube/nube_laptop.html" coords="552,661,98" shape="circle">
+		<area alt="blackberry" href="../page/Nube/nube_blackberry.html" coords="880,546,86" shape="circle">
+		<area alt="compuAIO" href="../page/Nube/nube_compuAIO.html" coords="933,341,86" shape="circle">
+		<area alt="servidor" href="../page/Nube/nube_servidor.html" coords="670,3,896,235" shape="rect">
+		
+		</area>
+	</map>
+	
+	<hr>
+	
+	<!------------- Imagen Responsiva --------------->
+	<!-- El diseño responsivo, pagina y contenido (solo imágenes en esta práctica) -->
+	<!-- tener 4 imagenes, 
+	nombrar cada img segun el tamaño, 
+	redimensionar el valor condicionado (Exíto)-->
+	
+	<h3> Imagen Responsiva(Adaptable según las dimensiones de la pantalla) </h3>	
+	<picture>
+		<source media="(min-width:750px)" srcset="../img/Hacker_750.jpeg">
+		<source media="(min-width:550px)" srcset="../img/Hacker_550.jpeg">
+		<source media="(min-width:400px)" srcset="../img/Hacker_400.jpg">
+		<source media="(min-width:300px)" srcset="../img/Hacker_300.webp">
+		<img src="../img/Hacker_all.jpeg">
+	</picture>
+	
+	<!--------- Pie de Pagina --------->
+	<footer>
+		<p>Desarrollado por eriamuri</p>
+		<p>
+			<a href="mailto:eriamuri@espol.edu.ec"> Correo </a> |
+			<a href="tel:+593989868320"> Celular </a>
+		</p>
+		<p> 2025 - Página de Practicas Académicas | Espol </p>
+	</footer>
+</body>

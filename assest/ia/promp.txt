@@ -1,0 +1,118 @@
+Crea una página web completa desde cero sobre una campamento al aire libre, usando solo HTML, CSS (en archivo externo) y JavaScript (en archivo externo). Explica la estructura del proyecto y qué hace cada archivo. Agrega una interacción simple con JavaScript (por ejemplo, un botón que cambie el color de fondo del sitio). Selecciona una paleta de colores y fuente que combinen con el tema de un campamento. Muestra el código de los archivos index.html, style.css y script.js, y explica cómo abrir el proyecto en un navegador
+
+le puedes agregar una imagen
+
+Respuesta:
+
+campamento-web/
+│
+├── index.html       ← Estructura principal del sitio
+├── style.css        ← Estilos visuales (colores, fuentes, diseño)
+└── script.js        ← Interacciones con JavaScript (botón de fondo)
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Campamento al Aire Libre</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <h1>Campamento al Aire Libre</h1>
+    <p>Explora la naturaleza, respira aire puro y vive la aventura.</p>
+  </header>
+
+  <main>
+    <section>
+      <h2>¿Qué ofrecemos?</h2>
+      <ul>
+        <li>Senderismo guiado</li>
+        <li>Fogatas nocturnas</li>
+        <li>Observación de estrellas</li>
+        <li>Actividades ecológicas</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Ubicación</h2>
+      <p>Estamos en las montañas de la Sierra, rodeados de ríos, bosques y cielos despejados.</p>
+    </section>
+
+    <button id="cambiarFondo">Cambiar fondo</button>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Campamento Natural. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f5f5dc;
+  color: #2e8b57;
+}
+
+header {
+  background-color: #2e8b57;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+h2 {
+  color: #8b4513;
+}
+
+ul {
+  list-style-type: square;
+  padding-left: 20px;
+}
+
+button {
+  background-color: #87ceeb;
+  color: #2e8b57;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+button:hover {
+  background-color: #2e8b57;
+  color: white;
+}
+
+footer {
+  background-color: #8b4513;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+const boton = document.getElementById("cambiarFondo");
+
+boton.addEventListener("click", () => {
+  const colores = ["#f5f5dc", "#87ceeb", "#2e8b57", "#ffe4b5"];
+  const colorActual = document.body.style.backgroundColor;
+  let nuevoColor = colores[Math.floor(Math.random() * colores.length)];
+
+  // Evitar repetir el mismo color
+  while (nuevoColor === colorActual) {
+    nuevoColor = colores[Math.floor(Math.random() * colores.length)];
+  }
+
+  document.body.style.backgroundColor = nuevoColor;
+});
+

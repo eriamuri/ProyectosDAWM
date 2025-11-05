@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<head>
+	<!-- metadatos -->
+	<meta charset="UTF-8"> <!-- Latino -->
+	<meta charset="UTF-16"> <!-- izq a derecha -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Palabras clave para motores de busqueda-->
+	<meta name = "keywords" content= "HTML, CSS, JavaScript">
+	<meta name ="author" content="eriamuri">
+	<!-- actualizar documento por x seg-->
+	<meta http-equiv="refresh" content="300">
+	
+	<!-- Titulo e Iconos -->
+	<title>Practica CSS</title>
+	<link rel="icon" type="../img/Rhydon.ico" sizes="16x16" href="Rhydon.ico">
+	<link rel="icon" href="../img/Rhydon.ico">
+	<!--no es necesario aplicar el reset siempre-->
+	<!-- conesta hoja de estilo se resetea el formato del browser/navegador -->
+
+	<!-- <link rel="stylesheet" href="../Css/style_reset.css"> -->
+	<!--
+	<style>
+		p{
+			background:blue;
+		}
+		p{
+			background:green;
+		}
+	</style>
+	-->
+	<link rel="stylesheet" href="../Css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Bitcount+Grid+Single:wght@100..900&display=swap" rel="stylesheet">
+	
+</head>
+
+<body class="bbh-sans-bogle-regular">
+	<hr>
+	
+	<!----------- Barra de navegación -------------->
+	<header>
+		<nav>	
+			<a href="../../index.html"> Inicio </a> |
+			<a href="../page/practica_Texto.html"> Practica de etiquetas de Texto </a> |
+			<a href="../page/practica_Audio.html"> Practica de etiquetas de Audio </a> |
+			<a href="../page/practica_Video.html"> Practica de etiquetas de Video </a> |
+			<a href="../page/practica_Tablas.html"> Practica de etiquetas de Tablas </a> |
+			<a href="../page/practica_Listas.html"> Practica de etiquetas de Listas </a> |
+			<a href="../page/practica_Imagenes.html"> Practica de etiquetas de Imagenes </a> |
+			<a href="../page/practica_JavaScript.html"> Practica de etiquetas de JavaScript </a> | 
+			<a href="../page/practica_CSS.html"> Practica de etiquetas de CSS </a> |
+			<a href="../page/practica_MenuVertical.html"> Practica de etiquetas de Menu Vertical </a> |
+			<a href="../page/practica_MenuHorizontal.html"> Practica de etiquetas de Menu Horizontal </a> |
+			<a href="../page/practica_Plantilla.html"> Practica de etiquetas de Plantilla </a> |
+			<a href="../CopyPaste/zay-shop/templatemo_559_zay_shop/index.html"> Practica de etiquetas de Copy/Paste </a> |
+			<a href="../page/practica_Formulario.html"> Practica de etiquetas de Formulario </a> |
+			<a href="../page/practica_Formulario2.html"> Practica de etiquetas de Formulario 2 </a> |
+			<a href="../page/practica_Controles.html"> Practica de etiquetas de Controles </a> |
+			<a href="../ia/practica_InteligenciaArtificial.html"> Practica de etiquetas de Inteligencia Artificial </a> |
+			<a href="https://sites.google.com/fiec.espol.edu.ec/lugaresguayaquileamm/inicio"> Practica de etiquetas de Builder </a> |
+			<a href="https://protafolioeamm.my.canva.site/"> Practica de etiquetas de Canva </a>	
+		</nav>
+	</header>
+	<!----------- Practica de Etiquetas de CSS -------------->
+	<hr>
+	<main>
+		<h1 class="titulo">
+			Practica de CSS
+		</h1>
+		<!-- id = "cuerpoEspecial" -->
+		<span> 
+			CSS nos ayuda/sirve para dar estilo y diseño a nuestra Pagina Web.<br>
+			Para aplicarlo tenemos tres opciones:<br>
+		</span>
+		<div class="comportamiento">
+	
+			
+			<p class="caja">
+				
+				1.- En linea - Código embebido.<br>
+				Linea de estilo con Código embebido<br>
+				<!-- <p style="color:red"> -->
+			</p>
+			<p class="caja">
+				2.- Codigo Interno - Codigo en la cabecera<br>
+				El codigo debe ir en la cabecera del file<br>
+				<!-- Debemos explicar los selectores -->
+				style<br>
+					p{<br>
+						background:blue;<br>
+						
+					}<br>
+				style<br>
+			</p>
+			<p class="caja">
+				3.- Externo - File.css<br>
+				link rel="stylesheet" href="estilo.css"<br>
+			</p>
+			
+			
+		</div>
+		
+		<div class="comportamiento">
+			<p class="caja">
+				modelo caja #1:<br>
+				Todo elemento HTML se presenta como una caja
+			</p>
+			<p class="caja">
+				modelo caja #2:<br>
+				Todo elemento HTML se presenta como una caja
+			</p>
+		</div>
+		
+		<section class="resalta">
+			<article>
+				<h4>
+					Notas:
+				</h4>
+				<!-- class = "cuerpo" -->
+				<p>
+					1.- siempre se ejecuta de arriba hacia abajo,<br>
+					es decir la misma etiqueta la puede escribir dos veces<br>
+					y esta presentará en pantalla en ultimo efecto programado<br>
+				</p>
+				<p>
+					2.- Tener cuidado con montar las etiquetas,<br>
+				</p>
+				<p>
+					3.- Valide resetear antes de aplicar su diseño: dependiendo de su diseño<br>
+				</p>
+				
+			</article>
+		</section>
+		<span>
+			<h3> Hipervinculos </h3>
+			<hr>
+			<h5> Hipervinculos: abrir en una nueva pestaña </h5>
+			<p>
+				Un hipervínculo es un enlace que lleva a otro recurso, 
+				como otra página web o un archivo. 
+				Para abrir un hipervínculo en una nueva pestaña, 
+				se usa el atributo target="_blank" en el código HTML de la etiqueta a, 
+				o se puede hacer manualmente manteniendo presionada la tecla Ctrl (o Cmd en Mac) 
+				al hacer clic en el enlace en muchos navegadores.
+				<a href="../page/practica_Audio.html" target="_blank" > abrir en una nueva pestaña </a>
+			</p>
+			<br>
+			<h5> Hipervinculos:abrir en la misma pestaña </h5>
+			<p>
+			Un hipervínculo que se abre en la misma pestaña, 
+			usando el valor _self, redirige al usuario dentro de la misma ventana o 
+			marco sin abrir una nueva, lo que se considera el comportamiento 
+			predeterminado del navegador para enlaces internos. 
+			Esto es útil para navegar por secciones del mismo documento o sitio web, 
+			pero debe evitarse para enlaces externos o al salir de un proceso activo 
+			(como un formulario), ya que puede hacer que el usuario pierda su progreso actual.
+				<a href="../page/practica_Audio.html" target="_self" > abrir en la misma pestaña </a>
+			</p>
+			<br>
+			<h5> Hipervinculos: abrir una nueva pestaña, modo seguro </h5>
+			<p>
+			noopener noreferrer es un conjunto de atributos HTML que, 
+			cuando se usan en un enlace 
+			(a href="..." target="_blank" rel="noopener noreferrer">), 
+			protegen contra vulnerabilidades de seguridad y protegen la privacidad del usuario. 
+			noopener evita que la página de destino acceda a la ventana original de 
+			tu sitio web, protegiendo de ataques de phishing y mejorando el rendimiento. 
+			noreferrer impide que la página de destino sepa de dónde provino el enlace, 
+			ocultando la información de referencia. 
+				<a href="../page/practica_Audio.html" target="_blank" rel="noopener noreferrer" > abrir en una misma pestaña (modo seguro)</a>
+			</p>
+			<br>
+		</span>
+		<hr>
+		<h2>
+			Botones con estilo
+		</h2>
+		<h6>Evento over</h6>
+		<!-- selector #1 -->
+		<button>Presioname #1</button>
+		<!-- selector #2 -->
+		<button class="btn">Presioname #2</button>
+		
+		
+	</main>
+	<hr>
+	
+	<!--------- Pie de Pagina --------->
+	<footer>
+		<p>Desarrollado por eriamuri</p>
+		<p>
+			<a href="mailto:eriamuri@espol.edu.ec"> Correo </a> |
+			<a href="tel:+593989868320"> Celular </a>
+		</p>
+		<p> 2025 - Página de Practicas Académicas | Espol </p>
+	</footer>
+</body>
